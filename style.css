@@ -54,6 +54,14 @@ body {
     letter-spacing: 2px;
 }
 
+.header-link {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Rayures verticales */
 .stripes-right {
     display: flex;
