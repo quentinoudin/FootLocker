@@ -97,8 +97,7 @@ body {
 .boxes-section {
     position: relative;
     width: 100%;
-    max-width: 600px;
-    height: 300px;
+    max-width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,13 +115,13 @@ body {
 
 .shoe-boxes {
     position: relative;
-    width: 100%;
-    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     z-index: 1;
 }
 
 .box {
-    position: absolute;
     width: 180px;
     height: auto;
     transition: transform 0.3s ease;
@@ -135,31 +134,19 @@ body {
 
 /* Positionnement des boîtes */
 .box-1 {
-    top: 10%;
-    left: 15%;
     transform: rotate(-5deg);
-    z-index: 2;
 }
 
 .box-2 {
-    top: 5%;
-    right: 15%;
     transform: rotate(5deg);
-    z-index: 3;
 }
 
 .box-3 {
-    bottom: 20%;
-    left: 25%;
     transform: rotate(-3deg);
-    z-index: 1;
 }
 
 .box-4 {
-    bottom: 15%;
-    right: 20%;
     transform: rotate(8deg);
-    z-index: 4;
 }
 
 /* Description du jeu */
@@ -228,6 +215,7 @@ body {
     align-items: center;
     justify-content: space-between;
     position: relative;
+    margin-top: auto;
 }
 
 .footer-content {
