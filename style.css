@@ -228,6 +228,7 @@ body {
     align-items: center;
     justify-content: space-between;
     position: relative;
+    margin-top: auto;
 }
 
 .footer-content {
@@ -539,4 +540,76 @@ body {
     width: 100%;
     padding: 18px;
     font-size: 1.3rem;
+}
+
+/* Bouton Compris */
+.btn-compris {
+    display: block;
+    margin: 30px auto 0;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    padding: 18px;
+    font-size: 1.2rem;
+}
+
+/* ========================================
+   RULES PAGE
+   ======================================== */
+.rules-page {
+    background-color: #fff;
+    padding: 40px 30px;
+    margin: 40px auto;
+    max-width: 700px;
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rules-page .section-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    color: #000;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.rules-page .section-title:first-of-type {
+    margin-top: 0;
+}
+
+.rules-page p {
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.rules-page strong {
+    color: #000;
+}
+
+.rules-list,
+.rewards-list {
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    font-size: 1rem;
+}
+
+.rules-list li,
+.rewards-list li {
+    margin-bottom: 5px;
+}
+
+.highlight-text {
+    color: #cc0000;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.text-red {
+    color: #cc0000;
+    font-weight: 700;
 }
