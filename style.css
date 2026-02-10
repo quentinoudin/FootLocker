@@ -440,10 +440,14 @@ body {
 
 .btn-submit:hover {
     transform: scale(1.05);
+
+}
+.btn-submit:hover {
+    transform: scale(1.05);
 }
 
 /* ========================================
-   FORM PAGE
+FORM PAGE
    ======================================== */
 .form-page {
     background: linear-gradient(180deg, #1a0a0a 0%, #2d1515 50%, #1a0a0a 100%);
