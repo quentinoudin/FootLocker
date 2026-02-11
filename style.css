@@ -187,6 +187,8 @@ body {
 .btn {
     padding: 18px 40px;
     font-family: 'Anton', sans-serif;
+    text-decoration: none; /* enlève soulignement */
+    text-align: center;
     font-size: 1.5rem;
     text-transform: uppercase;
     border: none;
