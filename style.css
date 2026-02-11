@@ -119,47 +119,54 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1;
+    perspective: 1000px;
 }
 
 .box {
     position: absolute;
     width: 180px;
     height: auto;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
     cursor: pointer;
+    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.3));
 }
 
 .box:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) translateY(-5px);
+    filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.4));
 }
 
 /* Positionnement des boîtes */
 .box-1 {
-    top: 10%;
-    left: 15%;
-    transform: rotate(-5deg);
+    top: 20%;
+    left: 5%;
+    transform: rotate(-8deg) translateZ(0);
     z-index: 2;
 }
 
 .box-2 {
     top: 5%;
-    right: 15%;
-    transform: rotate(5deg);
+    left: 35%;
+    transform: rotate(5deg) translateY(0);
     z-index: 3;
 }
 
 .box-3 {
-    bottom: 20%;
-    left: 25%;
-    transform: rotate(-3deg);
+    bottom: 10%;
+    left: 20%;
+    transform: rotate(-5deg);
     z-index: 1;
+    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.3));
 }
 
 .box-4 {
-    bottom: 15%;
-    right: 20%;
-    transform: rotate(8deg);
+    top: 15%;
+    right: 5%;
+    transform: rotate(8deg) translateY(0);
     z-index: 4;
+    /* Illumination sur la boîte de droite */
+    filter: drop-shadow(0 0 30px rgba(255, 200, 0, 0.6)) 
+            drop-shadow(0 15px 35px rgba(0, 0, 0, 0.4));
 }
 
 /* Description du jeu */
@@ -547,10 +554,19 @@ body {
     display: block;
     margin: 30px auto 0;
     width: 80%;
-    max-width: 400px;
+    max-width: 500px;
     text-align: center;
     padding: 18px;
     font-size: 1.2rem;
+    background-color: #a0a0a0;
+    color: #000;
+    box-shadow: none;
+}
+
+.btn-compris:hover {
+    background-color: #8a8a8a;
+    transform: translateY(-2px);
+    box-shadow: none;
 }
 
 /* ========================================
