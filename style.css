@@ -47,10 +47,11 @@ body {
 }
 
 .title {
-    font-family: 'Anton', sans-serif;
+    /*font-family: 'Anton', sans-serif; */
     font-size: 2.5rem;
     color: #fff;
-    text-transform: uppercase;
+    text-align: center;
+    /*text-transform: uppercase;*/
     letter-spacing: 2px;
 }
 
@@ -192,7 +193,7 @@ body {
     font-size: 1.5rem;
     text-transform: uppercase;
     border:none;
-    border-radius:50px;
+    border-radius:20px;
     cursor: pointer;
     transition: all 0.3s ease;
     letter-spacing: 1px;
@@ -232,7 +233,7 @@ body {
     font-size: 1.5rem;
     text-transform: uppercase;
     border: none;
-    border-radius: 50px;
+    border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
     letter-spacing: 1px;
@@ -254,7 +255,7 @@ body {
 
 /* Bouton gris (Rules) */
 .btn-rules2 {
-    background-color: #d5d5d5;
+    background-color: #a0a0a0;
     color: #000;
     margin-left: 20%;
     margin-right: 20%;
@@ -265,7 +266,7 @@ body {
 }
 
 .btn-rules2:hover {
-    background-color: #c8c8c8;
+    background-color: #8a8a8a;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
