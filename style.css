@@ -219,6 +219,50 @@ body {
 }
 
 /* ========================================
+/* Bouton générique */
+.btn2 {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none; /* enlève soulignement */
+    padding: 18px 40px;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+/* Bouton rouge */
+.btn-play2 {
+    background-color: #e63936;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(230, 57, 54, 0.4);
+}
+
+.btn-play2:hover {
+    background-color: #cc2f2c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(230, 57, 54, 0.5);
+}
+
+/* Bouton gris (Rules) */
+.btn-rules2 {
+    background-color: #a0a0a0;
+    color: #000;
+}
+
+.btn-rules2:hover {
+    background-color: #8a8a8a;
+    transform: translateY(-2px);
+}
+   /*======================================== */
+
+/* ========================================
    FOOTER
    ======================================== */
 .footer {
@@ -551,6 +595,7 @@ body {
     text-align: center;
     padding: 18px;
     font-size: 1.2rem;
+    margin-bottom: 40px;
 }
 
 /* ========================================
@@ -620,13 +665,16 @@ MENTIONS LEGALES PAGE
    ======================================== */
 
 .mentions_legales {
-    text-align: center;
-    margin-top: 50px;
-    padding-left: 25px;
-    padding-right: 25px;
+    text-align: left;
+    margin-top: 60px;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
+.title-legal {
+    margin-bottom: 10px;
+}
 
-.BR{
-    margin-bottom: 20px;
+.p {
+    margin-bottom: 30px;
 }
