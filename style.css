@@ -16,7 +16,7 @@ body {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Manrope', sans-serif;
     background-color: #e8e8e8;
     min-height: 100vh;
     display: flex;
@@ -327,40 +327,50 @@ body {
 /* Form */
 .form-page {
     justify-content: center;
+    background: #1a1010;
 }
 
 .form-section {
     width: 100%;
-    max-width: 620px;
-    background-color: #fff;
-    border-radius: 16px;
-    padding: 30px;
-    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+    max-width: 500px;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 30px 20px;
+    box-shadow: none;
 }
 
 .user-form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
 }
 
 .form-group label {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 1rem;
+    font-weight: 700;
     letter-spacing: 0.5px;
+    color: #fff;
 }
 
 .form-group input {
-    border: 1px solid #c9c9c9;
-    border-radius: 10px;
+    border: 2px solid #555;
+    border-radius: 8px;
     padding: 12px 14px;
-    font-size: 1rem;
+    font-size: 0.95rem;
+    font-family: 'Manrope', sans-serif;
+    background-color: #1e1414;
+    color: #fff;
+}
+
+.form-group input::placeholder {
+    color: #888;
 }
 
 .checkbox-group {
@@ -369,56 +379,65 @@ body {
 
 .checkbox-label {
     display: flex;
-    align-items: flex-start;
-    gap: 8px;
+    align-items: center;
+    gap: 10px;
     line-height: 1.35;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.85rem;
 }
 
-.checkmark {
-    width: 16px;
-    height: 16px;
-    border: 1px solid #888;
-    border-radius: 3px;
-    display: inline-block;
-    margin-top: 3px;
+.checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #e63936;
+    flex-shrink: 0;
 }
 
 .btn-jouer {
-    margin-top: 8px;
+    margin-top: 10px;
+    width: 100%;
 }
 
 /* Rules */
 .rules-page {
-    max-width: 880px;
+    max-width: 620px;
     width: 100%;
-    background: #fff;
-    border-radius: 16px;
-    padding: 28px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
 }
 
 .section-title {
-    font-family: 'Anton', sans-serif;
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 8px;
 }
 
 .rules-list,
 .rewards-list {
-    padding-left: 24px;
-    margin-bottom: 14px;
+    padding-left: 20px;
+    margin-bottom: 10px;
 }
 
 .rules-list li,
 .rewards-list li {
-    line-height: 1.8;
-    margin-bottom: 5px;
+    line-height: 1.55;
+    margin-bottom: 4px;
+    font-size: 0.95rem;
+}
+
+.rules-page p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
 }
 
 .highlight-text {
     color: #cc0000;
     font-weight: 700;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .text-red {
@@ -427,8 +446,18 @@ body {
 }
 
 .btn-compris {
-    max-width: 420px;
-    margin-top: 20px;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 30px;
+    padding: 14px 52px;
+    background-color: #c6c6c6;
+    color: #111;
+    box-shadow: none;
+}
+
+.btn-compris:hover {
+    background-color: #b5b5b5;
+    box-shadow: none;
 }
 
 /* Mentions legales */
@@ -437,6 +466,8 @@ body {
     margin-top: 40px;
     padding-left: 20%;
     padding-right: 20%;
+    display: flex;
+    flex-direction: column;
 }
 
 .title-legal {
@@ -466,11 +497,11 @@ body {
 
 .scene {
     position: relative;
-    width: min(92vw, 760px);
-    max-width: 760px;
-    height: clamp(220px, 38vw, 320px);
+    width: min(100vw, 1200px);
+    max-width: 1200px;
+    height: clamp(600px, 80vw, 850px);
     margin: 0 auto;
-    background: linear-gradient(180deg, #f5f5f5 0%, #e0e0e0 100%);
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -483,87 +514,81 @@ body {
 }
 
 .boite {
-    width: clamp(170px, 31vw, 250px);
+    width: clamp(350px, 60vw, 500px);
 }
 
 #scene-gagne .boite-gauche {
-    left: 7%;
-    top: 20%;
-    transform: rotate(-7deg);
+    left: 0%;
+    top: 10%;
+    transform: rotate(-4deg);
     z-index: 2;
 }
 
 #scene-gagne .boite-droite {
-    right: 7%;
-    top: 20%;
-    transform: rotate(7deg);
+    right: 0%;
+    top: 10%;
+    transform: rotate(-4deg);
     z-index: 2;
 }
 
-#scene-gagne .chaussures {
-    left: 50%;
-    bottom: 2%;
+#scene-gagne .boite-avant {
+    left: 45%;
+    bottom: 12%;
     transform: translateX(-50%);
-    width: clamp(130px, 23vw, 180px);
-    height: clamp(66px, 12vw, 98px);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Anton', sans-serif;
-    font-size: clamp(0.75rem, 1.8vw, 1rem);
-    letter-spacing: 1px;
-    color: #4a3700;
-    background: linear-gradient(145deg, #ffe8a8 0%, #d8b757 100%);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-    z-index: 4;
+    z-index: 3;
 }
 
 .halo-lumiere {
     position: absolute;
-    bottom: 10px;
+    bottom: -30%;
     left: 50%;
     transform: translateX(-50%);
-    width: clamp(180px, 30vw, 260px);
-    height: clamp(90px, 16vw, 140px);
-    background: radial-gradient(ellipse at center, rgba(255, 215, 0, 0.5) 0%, rgba(255, 215, 0, 0) 70%);
+    width: clamp(600px, 90vw, 1000px);
+    height: clamp(450px, 70vw, 750px);
+    background: radial-gradient(ellipse at center, rgba(255, 215, 0, 0.8) 0%, rgba(255, 200, 0, 0.5) 25%, rgba(255, 215, 0, 0.2) 50%, rgba(255, 215, 0, 0) 75%);
     z-index: 1;
     pointer-events: none;
 }
 
-#scene-perdu .boite-arriere {
-    left: 12%;
-    top: 15%;
-    transform: rotate(-5deg);
+#scene-perdu .boite-gauche {
+    left: 5%;
+    top: 8%;
+    transform: rotate(-4deg);
     z-index: 2;
 }
 
-#scene-perdu .boite-avant {
-    right: 12%;
-    top: 38%;
-    transform: rotate(4deg);
+#scene-perdu .boite-droite {
+    left: 22%;
+    top: 45%;
+    transform: rotate(-4deg);
     z-index: 3;
 }
 
-#scene-perdu .chaussettes {
-    right: 16%;
-    top: 8%;
-    width: clamp(110px, 20vw, 150px);
-    height: clamp(56px, 11vw, 88px);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Anton', sans-serif;
-    font-size: clamp(0.8rem, 2vw, 1rem);
-    color: #222;
-    background: linear-gradient(145deg, #d6d6d6 0%, #b8b8b8 100%);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+#scene-perdu .boite-avant {
+    right: 5%;
+    top: -15%;
+    left: auto;
+    bottom: auto;
+    transform: rotate(-20deg) scaleX(-1) scale(0.8);
+    z-index: 3;
+}
+
+.tache-perdu {
+    position: absolute;
+    right: 5%;
+    top: -15%;
+    left: auto;
+    bottom: auto;
+    width: clamp(300px, 50vw, 500px);
+    transform: rotate(-20deg) scaleX(-1) scale(0.8);
+    z-index: 2;
+    pointer-events: none;
 }
 
 .result-action-btn {
-    width: min(92vw, 460px);
+    width: min(100vw, 1040px);
+    padding: 22px 50px;
+    font-size: 1.8rem;
 }
 
 /* Responsive */
@@ -636,23 +661,46 @@ body {
 
 @media (max-width: 640px) {
     .result-scene-page .scene {
-        height: clamp(220px, 58vw, 280px);
+        height: clamp(280px, 65vw, 380px);
+    }
+
+    .boite {
+        width: clamp(160px, 40vw, 250px);
     }
 
     #scene-gagne .boite-gauche {
-        left: 2%;
+        left: 0%;
     }
 
     #scene-gagne .boite-droite {
-        right: 2%;
+        right: 0%;
     }
 
-    #scene-perdu .boite-arriere {
-        left: 4%;
+    #scene-gagne .boite-avant {
+        left: 45%;
+        bottom: 8%;
+    }
+
+    .result-action-btn {
+        padding: 16px 30px;
+        font-size: 1.3rem;
+    }
+
+    .result-title {
+        font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+    }
+
+    #scene-perdu .boite-gauche {
+        left: 0%;
+    }
+
+    #scene-perdu .boite-droite {
+        right: 0%;
     }
 
     #scene-perdu .boite-avant {
-        right: 4%;
+        left: 45%;
+        bottom: 8%;
     }
 }
 
@@ -689,5 +737,28 @@ body {
 
     #round1-boxes .back-right {
         transform: translate(115px, -15px) scale(0.78);
+    }
+
+    .result-scene-page .scene {
+        height: clamp(220px, 55vw, 300px);
+    }
+
+    .boite {
+        width: clamp(120px, 34vw, 190px);
+    }
+
+    #scene-gagne .boite-avant {
+        left: 42%;
+        bottom: 5%;
+    }
+
+    .result-action-btn {
+        padding: 14px 20px;
+        font-size: 1.1rem;
+    }
+
+    .halo-lumiere {
+        width: clamp(250px, 70vw, 400px);
+        height: clamp(200px, 50vw, 350px);
     }
 }
