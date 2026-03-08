@@ -156,7 +156,7 @@ body {
 }
 
 .description-text {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-size: 1.8rem;
     color: #000;
     line-height: 1.4;
@@ -317,10 +317,14 @@ body {
 }
 
 .description-text {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-size: 1.8rem;
     color: #000;
     line-height: 1.4;
+}
+
+#margintoprecompense {
+    margin-top: 50px;
 }
 
 .cta-section {
@@ -539,6 +543,10 @@ body {
 .title-legal {
     margin-bottom: 10px;
     font-family: 'Manrope', sans-serif;
+}
+
+.bold {
+    font-weight: 700;
 }
 
 .p {
