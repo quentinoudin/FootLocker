@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foot Locker - Règles du jeu</title>
+    <title>Foot Locker - Triple Shoot !</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;600;700&family=Oswald:wght@400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+
     <!-- Header -->
     <header class="header">
         <div class="header-content">
             <a href="index.html" class="header-link">
                 <img src="/images/logo_foot_locker2.png" alt="Foot Locker" class="logo">
-                <h1 class="title">Règles du jeu</h1>
+                <h1 class="title">Foot Locker - Triple Shoot</h1>
             </a>
         </div>
         <div class="stripes-right">
@@ -28,28 +30,27 @@
     
     </header>
 
-    <!-- Contenu Règles du jeu -->
-    <main class="main-content">
-        <div class="rules-page">
-            <h2 class="section-title">Comment jouer ?</h2>
-            <ol class="rules-list">
-                <li>À chaque round, choisis une des 3 boîtes.</li>
-                <li>Si la boîte contient un tir gagnant, tu gagnes un lot.</li>
-            </ol>
-            <p>Après le 1er round, tu devras rentrer tes informations pour continuer de jouer (Nom, prénom, mail).</p>
+    <main class="main-content round1-page">
+  <div class="sunburst"></div>
 
-            <h2 class="section-title">Les récompenses</h2>
-            <ul class="rewards-list">
-                <li><strong>1 round réussi</strong> → Petit cadeau (prochaine livraison gratuite)</li>
-                <li><strong>2 rounds réussis</strong> → Récompense intermédiaire (une paire de chaussettes Nike)</li>
-                <li><strong>3 rounds réussis</strong> → Le Grand Lot (-50% sur la paire de ton choix)</li>
-            </ul>
+  <h2 class="round-title">Choisis une boîte !</h2>
+  
+  <div class="box-group" id="round1-boxes">
+    <div class="box back-left">
+      <img src="/images/boite_foot_locker.png" alt="Foot Locker Box">
+      <div class="shadow"></div>
+    </div>
+    
+    <div class="box back-right">
+      <img src="/images/boite_foot_locker.png" alt="Foot Locker Box">
+      <div class="shadow"></div>
+    </div>
 
-            <h2 class="section-title">Pour récupérer ton lot</h2>
-            <p>À la fin de la partie, rends-toi dans le Foot Locker le plus proche de chez toi et adresse-toi au vendeur pour <strong>recevoir ton gain !</strong></p>
-
-            <a href="index.html" class="btn btn-rules btn-compris">COMPRIS !</a>
-        </div>
+    <div class="box front-center">
+      <img src="/images/boite_foot_locker.png" alt="Foot Locker Box">
+      <div class="shadow"></div>
+    </div>
+  </div>
     </main>
 
     <!-- Footer -->
@@ -65,6 +66,5 @@
             <span></span>
         </div>
     </footer>
- </body>
- </html>
- 
+</body>
+</html>
